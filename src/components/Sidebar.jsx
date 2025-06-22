@@ -2,6 +2,7 @@ import React from 'react';
 import './Sidebar.css';
 import { FaLinkedin, FaGithub, FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 import profilePic from '../assets/profile.png';
+import resume from '../assets/Edward_Huang_Resume.pdf';
 
 export default function Sidebar() {
   return (
@@ -18,7 +19,7 @@ export default function Sidebar() {
       </div>
 
       <a
-        href="/Edward_Huang_Resume.pdf"
+        href={resume}
         target="_blank"
         rel="noopener noreferrer"
         className="resume-btn"
