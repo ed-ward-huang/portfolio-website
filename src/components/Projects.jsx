@@ -20,8 +20,7 @@ const projData = [
     details: [
       'Designed and developed a full-stack Pomodoro timer app with an integrated to-do list, boosting productivity by 30% for 20+ university students.',
       'Implemented secure user authentication with encrypted login and registration, leveraging MongoDB for storage of usernames, passwords, tasks, and productivity metrics',
-      'Engineered dynamic donut pie charts with React and Chart.js to visualize real-time productivity metrics, integrating Node.js/Express APIs with MongoDB for seamless data flow',
-      'Developed a responsive front-end using React, seamlessly integrating Pomodoro functionality, interactive charts, and to-do list for an intuitive user experience'
+      'Engineered dynamic donut pie charts with React and Chart.js to visualize real-time productivity metrics, integrating Node.js/Express APIs with MongoDB for seamless data flow'
     ],
   },
   {
@@ -150,7 +149,10 @@ export default function Projects() {
       {/* Modal Popup */}
       {active && (
         <Modal data={active} onClose={() => setActive(null)}>
-          <img src={active.image} alt={active.title} className="modal-image" />
+
+          <div className="modal-image-container">
+            <img src={active.image} alt={active.title} />
+          </div>
           <h3>{active.title}</h3>
           {/* Tech Stack Tags */}
           <div className="modal-stack">
