@@ -13,7 +13,7 @@ const projData = [
     category: 'Full-Stack Applications',
     featured: true,
     image: pomodoroImg,
-    period: 'Nov 2024',
+    period: 'Feb 2025',
     stack: ['React', 'Node.js', 'Express', 'MongoDB'],
     sourceLink: 'https://github.com/ed-ward-huang/Full-Stack-Pomodoro-Timer-Productivity-Task-Management-built-with-MERN?tab=readme-ov-file',
     demoLink: '',

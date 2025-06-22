@@ -8,7 +8,7 @@ const expData = [
     id: 1,
     logo: company1Logo,
     company: 'Daitaflow Software Company',
-    period: 'May 2025 — Aug 2025',
+    period: 'Apr 2025 — Aug 2025',
     details: [
       'Led frontend development for main dashboard.',
       'Implemented unit tests and CI/CD integration.',
