@@ -1,0 +1,149 @@
+.proj-section {
+    padding: 0 16px;
+  }
+  
+  .proj-header {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    top: 30px;
+    bottom: 30px;
+  }
+  
+  .filter-btn {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.2s;
+  }
+  
+  .filter-btn.active,
+  .filter-btn:hover {
+    color: #ffcc00;
+  }
+  
+  .subheading {
+    font-size: 1.3rem;
+    position: relative;
+    top: 30px;
+    bottom: 15px;
+    padding-left: 8px;
+  }
+  
+  .proj-grid {
+    display: grid;
+    position: relative;
+    top: 10px;
+    bottom: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  
+  .proj-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .proj-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .proj-card .proj-info {
+    padding: 12px;
+    background: #1f1f1f;
+  }
+  
+  .proj-card .proj-info h4 {
+    margin: 0 0 4px;
+    font-size: 1.1rem;
+  }
+  
+  .proj-card .proj-info .period {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .proj-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .proj-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+  }
+  
+  .proj-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay span {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .modal-content {
+    max-width: 600px;
+    width: 90vw;
+    padding: 32px;
+  }
+  
+  .modal-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  
+  .modal-btn {
+    display: inline-block;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .modal-btn:hover {
+    background: #3a3a3a;
+  }
+
+  .modal-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+  }
+  .stack-tag {
+    background: #2a2a2a;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  

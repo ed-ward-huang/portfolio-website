@@ -1,0 +1,108 @@
+.exp-section {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.exp-section h3 {
+    font-size: 1.5rem;
+    margin: 24px 0 12px 16px;
+}
+
+.edu-mini-card {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    border-radius: 16px;
+    margin-top: -5px;
+    gap: 16px;
+}
+
+.edu-mini-card .edu-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.edu-mini-card .edu-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.edu-mini-card .edu-text h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.edu-mini-card .edu-text p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
+.edu-mini-card .edu-period {
+    color: #ccc;
+}
+
+.exp-title {
+    position: relative;
+    left: -16px;
+    right: 26px;
+    top: 20px;
+}
+
+.edu-title {
+    position: relative;
+    left: -16px;
+    right: 26px;
+    bottom: -5px;
+    top: 20px;
+}
+
+.exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.exp-item {
+    display: flex;
+    gap: 16px;
+}
+
+.exp-item .exp-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.exp-item .exp-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exp-item .exp-content h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.exp-item .exp-content .period {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.exp-item .exp-content ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+.exp-item .exp-content ul li {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}

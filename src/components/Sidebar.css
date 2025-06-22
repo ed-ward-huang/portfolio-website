@@ -1,0 +1,106 @@
+.sidebar {
+  position: sticky;
+  top: 80px;
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 32px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 260px; 
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  background: #2a2a2a;
+  padding: 8px;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.role {
+  margin: 4px 0 24px;
+  font-size: 1rem;
+  color: #ccc;
+}
+.sidebar-blurb {
+  padding: 0 12px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.blurb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.blurb-list li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+.sidebar-call {
+  padding: 0 12px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.sidebar-call p {
+  position: relative;
+  bottom: -15px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+.highlight {
+  color: #ffcc00;
+  font-weight: 600;
+}
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: auto;
+  padding: 8px 16px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.resume-btn:hover {
+  background: #ffcc00;
+  color: #121212;
+  text-decoration: none;
+}
+.btn-icon {
+  font-size: 1rem;
+}
+.contact-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.social-icons a {
+  color: #e0e0e0;
+  transition: transform 0.2s, color 0.2s;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #ffcc00;
+}
