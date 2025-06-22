@@ -10,11 +10,11 @@ export default function About() {
         <p>
           Hi, I’m Edward Huang from Toronto, Canada. I’m currently a dual major in Computer Science and
           Finance at the University of Waterloo. I love building scalable web applications and exploring the evolving world of AI and Machine Learning.
-          I learned to code in high school, following my passion for video games and have been coding ever since.
+          I learned to code in high school due to my passion for video games, and have been coding ever since.
         </p>
         <p>
-          Outside of work and academics, I am a huge foodie and love to travel to try new cuisines. Let's chat about your favourite childhood food!
-          I love fruits and you definetely can't guess my favourite fruit from my profile haha. Feel free to reach out, I'd love to work togehter!
+          Outside of work and academics, I am a huge foodie and I love to travel and try new cuisines. Let's chat about your favourite childhood dish!
+          I love fruits and you definetely can't guess my favourite fruit from my profile haha. Its Watermelon! Feel free to reach out, I'd love to work together!
         </p>
       </div>
 
