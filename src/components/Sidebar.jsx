@@ -57,7 +57,7 @@ export default function Sidebar() {
         </p>
       </div>
 
-      <section id="contact" className="contact-section">
+      <section className="contact-section">
         <h1 className="contact-title">
           <AnimatedLetters letterClass={letterClass} strArray={title} idx={1} />
         </h1>
