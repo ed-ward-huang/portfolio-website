@@ -4,7 +4,7 @@ import waterlooLogo from '../assets/waterloo-logo.png';
 
 export default function About() {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       {/* Personal Blurb */}
       <div className="blurb">
         <p>

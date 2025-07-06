@@ -9,7 +9,7 @@ import './Projects.css';
 const projData = [
   {
     id: 1,
-    title: 'Pomodoro Timer and Task Management',
+    title: 'Pomodoro Timer, Task Management, and Productivity Tracker',
     category: 'Full-Stack Applications',
     featured: true,
     image: pomodoroImg,
@@ -79,19 +79,16 @@ export default function Projects() {
   const [filter, setFilter] = useState('All');
   const [active, setActive] = useState(null);
 
-  // Apply category filter
   const filtered = filter === 'All' ? projData : projData.filter(p => p.category === filter);
   const featured = filtered.filter(p => p.featured);
   const others = filtered.filter(p => !p.featured);
 
-  // Open modal capturing click origin
   const handleClick = (item, e) => {
     setActive({ ...item, originX: e.clientX, originY: e.clientY });
   };
 
   return (
     <section id="projects" className="proj-section">
-      {/* Filter Buttons */}
       <div className="proj-header">
         {categories.map(cat => (
           <button
@@ -104,7 +101,6 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Featured Projects */}
       {featured.length > 0 && (
         <>
           <h4 className="subheading">Featured</h4>
@@ -127,7 +123,6 @@ export default function Projects() {
         </>
       )}
 
-      {/* Other Projects */}
       <h4 className="subheading">Other</h4>
       <div className="proj-grid">
         {others.map(item => (
@@ -146,7 +141,6 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Modal Popup */}
       {active && (
         <Modal data={active} onClose={() => setActive(null)}>
 

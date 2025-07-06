@@ -28,7 +28,7 @@ const expData = [
 
 export default function Experiences() {
   return (
-    <section className="exp-section">
+    <section id="experiences" className="exp-section">
 
       {/* Work Experience */}
       <h3 className="exp-title">Work Experience</h3>

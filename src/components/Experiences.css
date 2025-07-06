@@ -13,7 +13,7 @@
 .edu-mini-card {
     display: flex;
     align-items: center;
-    background: #1e1e1e;
+    background: transparent !important;
     border-radius: 16px;
     margin-top: -5px;
     gap: 16px;
@@ -50,6 +50,7 @@
     position: relative;
     left: -16px;
     right: 26px;
+    bottom: -5px;
     top: 20px;
 }
 

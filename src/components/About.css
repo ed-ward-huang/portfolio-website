@@ -8,16 +8,16 @@
 .blurb p {
     position: relative;
     left: 16px;
-    right: 15px;
+    right: 16px;
     top: 20px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
 }
 
 .education-card {
   display: flex;
-  background: #1e1e1e;
+  background: transparent;
   border-radius: 16px;
   padding: 24px;
   align-items: center;
@@ -73,12 +73,13 @@ max-width: 800px;
   gap: 12px;
 }
 .tag {
-  background: #2a2a2a;
+  background: #E28600;
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 0.9rem;
   transition: background 0.2s;
 }
 .tag:hover {
-  background: #3a3a3a;
+  background: #FB9500;
+  transform: scale(1.05);
 }

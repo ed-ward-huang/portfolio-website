@@ -23,6 +23,11 @@
   .filter-btn.active,
   .filter-btn:hover {
     color: #ffcc00;
+    text-decoration-line: underline; 
+    text-decoration-color: var(--color-primary);
+    text-decoration-style: solid;  
+    text-underline-offset: 12px;  
+    text-decoration-thickness: 2px;   
   }
   
   .subheading {
@@ -58,7 +63,7 @@
   
   .proj-card .proj-info {
     padding: 12px;
-    background: #1f1f1f;
+    background: #E28600;;
   }
   
   .proj-card .proj-info h4 {
@@ -73,13 +78,13 @@
   }
   
   .proj-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
   }
   
   .proj-card .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(226, 171, 80, 0.4);
     opacity: 0;
     display: flex;
     align-items: center;
@@ -98,7 +103,7 @@
   
   .modal-content {
     position: relative;
-    background: #222;
+    background: #E28600;
     padding: 32px;
     border-radius: 12px;
     width: 80vw; 
@@ -134,7 +139,7 @@
   
   .modal-btn {
     display: inline-block;
-    background: #2a2a2a;
+    background: #E21E0C;
     color: #fff;
     text-decoration: none;
     padding: 8px 16px;
@@ -143,7 +148,8 @@
   }
   
   .modal-btn:hover {
-    background: #3a3a3a;
+    background: #B90303;
+    transform: scale(1.15);
   }
 
   .modal-stack {
@@ -153,7 +159,7 @@
     margin: 12px 0;
   }
   .stack-tag {
-    background: #2a2a2a;
+    background: #E25B1F;
     color: #fff;
     padding: 6px 12px;
     border-radius: 6px;

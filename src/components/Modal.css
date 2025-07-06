@@ -8,7 +8,7 @@
 }
 .modal-content {
   position: relative;
-  background: #222;
+  background: #E28600 !important;
   padding: 32px;
   border-radius: 12px;
   width: 80vw; 
