@@ -23,10 +23,21 @@
   margin-bottom: 24px;
   animation: float 3s ease-in-out infinite;
 }
+@keyframes occasional-shake {
+  0%, 90%, 100% { transform: translateX(0); }
+  91% { transform: translateX(-5px); }
+  92% { transform: translateX(5px); }
+  93% { transform: translateX(-5px); }
+  94% { transform: translateX(5px); }
+  95% { transform: translateX(0); }
+}
+
 .name {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
+  display: inline-block;
+  animation: occasional-shake 5s infinite ease-in-out;
 }
 .role {
   margin: 4px 0 24px;
