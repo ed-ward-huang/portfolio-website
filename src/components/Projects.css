@@ -20,15 +20,11 @@
     transition: color 0.2s;
   }
   
-  .filter-btn.active,
-  .filter-btn:hover {
-    color: #ffcc00;
-    text-decoration-line: underline; 
-    text-decoration-color: var(--color-primary);
-    text-decoration-style: solid;  
-    text-underline-offset: 12px;  
-    text-decoration-thickness: 2px;   
-  }
+.filter-btn.active,
+.filter-btn:hover {
+  color: #ffcc00;
+  font-weight: bold;
+}
   
   .subheading {
     font-size: 1.3rem;
