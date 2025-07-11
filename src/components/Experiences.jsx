@@ -2,29 +2,43 @@ import React from 'react';
 import './Experiences.css';
 import waterlooLogo from '../assets/waterloo-logo.png';
 import company1Logo from '../assets/daitaflow.png';
+import company2Logo from '../assets/waterloo-logo.png';
 
 const expData = [
   {
     id: 1,
     logo: company1Logo,
-    company: 'Daitaflow Software Company',
+    company: 'Daitaflow',
+    role: 'Full-Stack Software Engineer',
     period: 'Apr 2025 — Aug 2025',
     details: [
-      'Led frontend development for main dashboard.',
-      'Implemented unit tests and CI/CD integration.',
+      'Built an app that lets vendors upload Excel <cost forecasts> into Procore (Construction Management Platform), cutting <60%> of manual data entry',
+      'Built <Django REST APIs> and <PostgreSQL> database with data checks and batch processing',
+      'Redesigned <UI pages> with animations, custom icons, improving user efficiency by <30%>'
     ],
+  },
+  {
+    id: 2,
+    logo: company2Logo,
+    role: 'Research Assistant',
+    company: 'University of Waterloo',
+    period: 'Jun 2025 - Present',
+    details: ['Contributing to open-source <Pyserini> toolkit for information retrieval research.'],
   }
 ];
-/*{
-    id: 2,
-    logo: '/logo-company2.png',
-    company: 'Company B',
-    period: '2022 — 2023',
-    details: [
-      'Built RESTful APIs with Node.js and Express.',
-      'Optimized database queries for performance.',
-    ],
-  },*/
+
+function renderDetail(detail) {
+  const parts = detail.split(/<([^>]+)>/g);
+  return parts.map((text, idx) =>
+    idx % 2 === 1 ? (
+      <span key={idx} className="detail-highlight">
+        {text}
+      </span>
+    ) : (
+      <span key={idx}>{text}</span>
+    )
+  );
+}
 
 export default function Experiences() {
   return (
@@ -40,10 +54,11 @@ export default function Experiences() {
             </div>
             <div className="exp-content">
               <h4>{item.company}</h4>
+              <h8>{item.role}</h8>
               <p className="period">{item.period}</p>
               <ul>
                 {item.details.map((detail, idx) => (
-                  <li key={idx}>{detail}</li>
+                  <li key={idx}>{renderDetail(detail)}</li>
                 ))}
               </ul>
             </div>
@@ -51,7 +66,7 @@ export default function Experiences() {
         ))}
       </div>
 
-
+      {/* Education */}
       <h3 className="edu-title">Education</h3>
       <div className="edu-mini-card">
         <div className="edu-logo">
@@ -63,5 +78,6 @@ export default function Experiences() {
           <p className="edu-period">2024 — 2029</p>
         </div>
       </div>
-    </section>)
+    </section>
+  );
 }
