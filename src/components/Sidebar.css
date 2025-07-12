@@ -6,7 +6,7 @@
   padding: 32px 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   width: 260px; 
-  max-height: 800px;
+  max-height: 850px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@
 .sidebar-blurb {
   padding: 0 12px;
   text-align: left;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .blurb-list {
   list-style: none;
@@ -63,12 +63,11 @@
 .sidebar-call {
   padding: 0 12px;
   text-align: center;
-  margin-bottom: -15px;
+  margin-bottom: 16px;
 }
 .sidebar-call p {
   position: relative;
-  top: 8px;
-  bottom: -45px;
+  bottom: -15px;
   font-size: 0.9rem;
   line-height: 1.4;
   color: #e0e0e0;
@@ -81,7 +80,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 0px;
+  margin-bottom: auto;
   padding: 8px 16px;
   border: 2px solid #ffcc00;
   border-radius: 8px;
@@ -103,13 +102,12 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 5px;
+  margin-top: 16px;
 }
 .social-icons {
   display: flex;
   gap: 16px;
   margin-top: 16px;
-  margin-bottom: 10px
 }
 
 @keyframes pulse {
