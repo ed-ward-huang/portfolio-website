@@ -69,23 +69,24 @@
 }
 
 .exp-item {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 16px;
 }
 
-.exp-item .exp-logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 16px;
-    overflow: hidden;
+.exp-logo {
+  flex-shrink: 0;       
+  width: 60px;
+  aspect-ratio: 1 / 1; 
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.exp-item .exp-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.exp-logo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
-
 .exp-item .exp-content h4 {
     margin: 0;
     font-size: 1.2rem;
