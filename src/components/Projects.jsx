@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 import pomodoroImg from '../assets/pomodoro.png';
+import analytics from '../assets/YoutubeAnalytics.png';
 import TTS from '../assets/text-to-speech.png';
 import creditCardFraudDetection from '../assets/credit-card-fraud-detection.png';
 import sentimentDrivenStockPricePredictor from '../assets/sentiment-analysis-neural-network.png';
 import './Projects.css';
 
 const projData = [
-  {
+    {
     id: 1,
+    title: 'X/Youtube Analytics Sentiment/Hate-speech Detection Dashboard',
+    category: 'Full-Stack Applications',
+    featured: true,
+    image: analytics,
+    period: 'Jul 2025',
+    stack: ['Pytorch', 'Scikit-learn', 'Next.js', 'Youtube Data API v3', 'Twitter API v2'],
+    sourceLink: 'https://github.com/ed-ward-huang/youtube-twitter-analytics',
+    demoLink: '',
+    details: [
+      'Developed an analytics dashboard that aggregates content and replies from Twitter and Youtube of a given public account, providing insights into user engagment, sentiment analysis of comments and replies',
+      'Implemented a sentiment analysis model using PyTorch and Scikit-learn, one Neural Network that classifies comments as positive, negative or neutral, and another machine learning model that classifies the negative replies as hate speech or not',
+      'Utilized Next.js for server side rendering and API integration, ensuring fast load times and efficient data fetching',
+      'Leveraged the Youtube Data API v3 and Twitter API v2 to fetch real-time data, enabling users to analyze trends and engagement metrics across both platforms',
+      'Plans to integrate personal account authentication to fetch user-specific data from better APIs',
+      'Project is currently finishing development, and will be available soon',
+    ],
+  },
+  {
+    id: 5,
     title: 'Pomodoro Timer, Task Management, and Productivity Tracker',
     category: 'Full-Stack Applications',
     featured: true,
