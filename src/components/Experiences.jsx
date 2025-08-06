@@ -3,14 +3,28 @@ import './Experiences.css';
 import waterlooLogo from '../assets/waterloo-logo.png';
 import company1Logo from '../assets/daitaflow.png';
 import company2Logo from '../assets/waterloo-logo.png';
+import company3Logo from '../assets/TightStudio.jpeg';
+import company4Logo from '../assets/AtriaCommunity.jpeg';
 
 const expData = [
   {
     id: 1,
+    logo: company3Logo,
+    company: 'Tight Studio',
+    role: 'Software Engineer Intern',
+    period: 'Jul 2025 — Present',
+    details: [
+      'Built a feature for <instant video upload> and <link sharing> after screen recording',
+      'Engineered <real-time file streaming> and <automatic S3 upload> with near-zero delay',
+      'Shipped tools for <cropping> and <AI-generated captions> to improve accessibility'
+    ],
+  },
+  {
+    id: 2,
     logo: company1Logo,
     company: 'Daitaflow',
     role: 'Full-Stack Software Engineer',
-    period: 'Apr 2025 — Aug 2025',
+    period: 'Apr 2025 — Jul 2025',
     details: [
       'Built an app that lets vendors upload Excel <cost forecasts> into Procore (Construction Management Platform), cutting <60%> of manual data entry',
       'Built <Django REST APIs> and <PostgreSQL> database with data checks and batch processing',
@@ -18,7 +32,19 @@ const expData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
+    logo: company4Logo,
+    company: 'Atria Community',
+    role: 'Software Engineer Intern',
+    period: 'May 2025 - Present',
+    details: [
+      'Built <Townhall>, a platform for <volunteers> to connect, chat, and join events',
+      'Developed features like <real-time chat>, <user authentication>, and content sharing',
+      'Contributed to <frontend UI> and <system design docs> to support team development'
+    ],
+  },
+  {
+    id: 4,
     logo: company2Logo,
     role: 'Research Assistant',
     company: 'University of Waterloo',
